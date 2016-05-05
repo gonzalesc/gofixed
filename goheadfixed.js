@@ -20,7 +20,7 @@ function goheadfixed(classtable) {
 			hcaption = parseInt($('.fix-inner table').find('caption').height()+'px');
 
 		// Table's Top
-		hinner = parseInt( $('.fix-inner').offset().top );
+		var hinner = parseInt( $('.fix-inner').offset().top );
 
 		// Let's remember that <caption> is the beginning of a <table>, it mean that his top of the caption is the top of the table
 		$('.fix-head').css({'position':'absolute', 'overflow':'hidden', 'top': hcaption+'px', 'left':0, 'z-index':100 });
